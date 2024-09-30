@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes e Ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="img" href="assets/restaurante.png">
+    <title>Restaurante Vida & Sabor</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header__container">
+        <div class="logo">
+            <img><a href="https://ibb.co/HqDgy0S"><img src="https://i.ibb.co/HqDgy0S/Logo-restaurante-delivery-rustico-5.png" alt="Logo-restaurante-delivery-rustico-1" border="0"></a>
+        </div>
+        <!-- Botão de Menu Hambúrguer -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+            <i class="ri-menu-line"></i>
+        </button>
+        <!-- Navegação Principal -->
+<nav class="main-nav" id="main-nav">
+    <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="social-icons">
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="#" class="social-icon">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+</div>
+</nav>
+        <a href="#reservas" class="subscribe-btn">Faça sua Reserva</a>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+       <!-- Seção Hero -->
+<section class="hero">
+    <div class="hero__text">
+        <h1 class="animated-text">Bem-vindo ao <span class="highlight">Restaurante Vida & Sabor</span></h1>
+        <p>Experimente o melhor da culinária internacional em um ambiente único e acolhedor.</p>
+    </div>
+    <div class="hero__image">
+        <img><a href="https://ibb.co/Lk4nWrN"><img src="https://i.ibb.co/Lk4nWrN/D-NQ-NP-727308-MLB75452901548-042024-O.webp" alt="D-NQ-NP-727308-MLB75452901548-042024-O" border="0"></a>
+    </div>
+</section>
+      <!-- Seção Sobre Nós -->
+<section class="sobre" id="sobre">
+    <div class="container text-center">
+        <div class="sobre__content">
+            <div class="sobre__texto">
+                <h2>Sobre Nós</h2>
+                <p>O Restaurante DNL é conhecido por sua culinária excepcional, ambiente sofisticado e atendimento impecável. Nossa missão é proporcionar uma experiência gastronômica inesquecível a cada visita.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção do Menu -->
+<section class="menu" id="menu">
+    <div class="container">
+        <h2 class="text-center">Nosso Menu</h2>
+        <div class="menu__tabs">
+            <button class="menu__tab active" data-tab="breakfast">
+                <i class="fas fa-coffee"></i> Café da Manhã
+            </button>
+            <button class="menu__tab" data-tab="lunch">
+                <i class="fas fa-utensils"></i> Almoço
+            </button>
+            <button class="menu__tab" data-tab="dinner">
+                <i class="fas fa-drumstick-bite"></i> Jantar
+            </button>
+        </div>
+        <div class="menu__content" id="breakfast">
+            <!-- Opções de Café da Manhã -->
+                <div class="menu__item">
+                 <img<a href="https://ibb.co/1LN1VSp"><img src="https://i.ibb.co/1LN1VSp/320178-original.jpg" alt="320178-original" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Panquecas com Mel</h3>
+                    <p>Deliciosas panquecas servidas com mel e frutas frescas.</p>
+                    <span class="menu__item-price">R$ 10,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img<a href="https://ibb.co/s2VMXq5"><img src="https://i.ibb.co/s2VMXq5/69633-omelete-de-vegetais.jpg" alt="69633-omelete-de-vegetais" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Omelete com Queijo</h3>
+                    <p>Omelete fluffy recheada com queijo e ervas finas.</p>
+                    <span class="menu__item-price">R$ 10,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/PjGg0z2"><img src="https://i.ibb.co/PjGg0z2/69633-pao-de-queijo-vegano.jpg" alt="69633-pao-de-queijo-vegano" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Pão de Queijo</h3>
+                    <p>Pão de Queijo.</p>
+                    <span class="menu__item-price">R$ 2,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <imm><a href="https://ibb.co/NsLrDQh"><img src="https://i.ibb.co/NsLrDQh/69633-bolo-de-cenoura-de-liquidificador.webp" alt="69633-bolo-de-cenoura-de-liquidificador" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Bolo de Cenoura</h3>
+                    <p>Bolo de Cenoura com cobertura ou sem.</p>
+                    <span class="menu__item-price">R$ 5,00</span>
+                </div>
+            </div>
+              
+            <!-- Adicione mais  opções de Café da Manhã aqui -->
+        </div>
+        <div class="menu__content" id="lunch" style="display: none;">
+            <!-- Opções de Almoço -->
+            <div class="menu__item">
+                <img><a href="https://ibb.co/ZxbQVrB"><img src="https://i.ibb.co/ZxbQVrB/macarrao-com-almondegas.jpg" alt="macarrao-com-almondegas" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Macarrão com almôdega</h3>
+                    <p>Macarrão com almoôdega.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/7Sb6yJD"><img src="https://i.ibb.co/7Sb6yJD/file-de-frango-grelhado-2.jpg" alt="file-de-frango-grelhado-2" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Peito de Frango Grelhado</h3>
+                    <p>Peito de frango grelhado servido com arroz e salada.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/Rps34FN"><img src="https://i.ibb.co/Rps34FN/transferir.jpg" alt="transferir" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Lasanha à Bolonhesa</h3>
+                    <p>Lasanha recheada com carne moída e molho de tomate.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img <a href="https://ibb.co/yVzpt6p"><img src="https://i.ibb.co/yVzpt6p/365760-original.jpg" alt="365760-original" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Lombo com abacaxi caramelizado</h3>
+                    <p>Lombo com abacaxi caramelizado.</p>
+                    <span class="menu__item-price">R$ 20,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img src=<a href="https://ibb.co/PjNr45m"><img src="https://i.ibb.co/PjNr45m/1843764635-file-mignon-batata-duchesse.webp" alt="1843764635-file-mignon-batata-duchesse" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Filé-mignon com batata duchesse</h3>
+                    <p>Filé-mignon com batata duchesse</p>
+                    <span class="menu__item-price">R$ 20,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/4gb69sq"><img src="https://i.ibb.co/4gb69sq/2135760350-salmao-molho-pimenta-rosa.webp" alt="2135760350-salmao-molho-pimenta-rosa" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Salmão ao molho de pimenta rosa</h3>
+                    <p>Salmão ao molho de pimenta rosa.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+             <!-- Adicione mais opções de Jantar aqui -->
+        </div>
+        <div class="menu__content" id="dinner" style="display: none;">
+            <!-- Opções de Jantar -->
+            <div class="menu__item">
+                <img><a href="https://ibb.co/6DSkt6N"><img src="https://i.ibb.co/6DSkt6N/abobrinha-gratinada-facil-00-730x480.jpg" alt="abobrinha-gratinada-facil-00-730x480" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Abobrinha gratinada</h3>
+                    <p>Abobrinha gratinada.</p>
+                    <span class="menu__item-price">R$ 10,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/rZ4hh1y"><img src="https://i.ibb.co/rZ4hh1y/fricasse-de-frango-facil-8-730x480.jpg" alt="fricasse-de-frango-facil-8-730x480" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Fricassê de frango</h3>
+                    <p>Fricassê de frango.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/fkWfYzT"><img src="https://i.ibb.co/fkWfYzT/file-de-tilapia-a-parmegiana-facil-capa.webp" alt="file-de-tilapia-a-parmegiana-facil-capa" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Filé de tilápia à parmegiana fácil</h3>
+                    <p>Filé de tilápia à parmegiana fácil</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/Qb4fbSj"><img src="https://i.ibb.co/Qb4fbSj/strogonoff-de-frango-light.jpg" alt="strogonoff-de-frango-light" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Strogonoff de frango</h3>
+                    <p>Strogonoff de frango.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/L6tFhsF"><img src="https://i.ibb.co/L6tFhsF/images.jpg" alt="images" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Sushi</h3>
+                    <p>sushi.</p>
+                    <span class="menu__item-price">R$ 15,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/xsXpHkN"><img src="https://i.ibb.co/xsXpHkN/MG-4828.png" alt="MG-4828" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Pizza</h3>
+                    <p>Pizza.</p>
+                    <span class="menu__item-price">R$ 25,00</span>
+                </div>
+            </div>
+            <div class="menu__item">
+                <img><a href="https://ibb.co/2gBHNVz"><img src="https://i.ibb.co/2gBHNVz/ca.jpg" alt="ca" border="0"></a>
+                <div class="menu__item-content">
+                    <h3>Cachorro quente</h3>
+                    <p>Cachorro quente.</p>
+                    <span class="menu__item-price">R$ 10,00</span>
+                </div>
+            </div>
+            <!-- Adicione mais opções de Jantar aqui -->
+        </div>
+    </div>
+</section>
+
+  <!-- Seção de Reserva -->
+<section class="reserva" id="reservas">
+    <div class="container reserva__container">
+        <h2>Reserve uma Mesa</h2>
+        <form class="reserva__form">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="quantidade">Quantidade de Pessoas</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Número de Pessoas" required min="1">
+            </div>
+            <button type="submit" class="reserva__btn">Reservar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Seção Seleção dos Chefs -->
+<section class="chefs" id="chefs">
+    <div class="container">
+        <h2>Nosso Time de Chefs</h2>
+        <div class="chefs__grid">
+            <!-- Chef 1 -->
+            <div class="chef__card">
+                <h3>Chefa Dafny</h3>
+                <p>Especialista em culinária italiana e mediterrânea.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Chef 2 -->
+            <div class="chef__card">
+                <h3>Chefa Nicoli</h3>
+                <p>Expert em pratos gourmet franceses e sobremesas sofisticadas.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Chef 3 -->
+            <div class="chef__card">
+                <h3>Chefa Leticia</h3>
+                <p>Maestria em culinária asiática e fusões contemporâneas.</p>
+                <div class="chef__social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção Testemunhos -->
+<section class="testemunhos" id="testemunhos">
+    <div class="container text-center">
+        <h2>Depoimentos</h2>
+        <div class="testemunhos__container">
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Uma experiência culinária como nenhuma outra! O ambiente e a comida são perfeitos."</p>
+                <h3 class="testemunho-autor">Maria</h3>
+                <span class="testemunho-cargo">Cliente Fiel</span>
+            </div>
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Melhor lugar para comemorar ocasiões especiais. Tudo é impecável."</p>
+                <h3 class="testemunho-autor">Danielle</h3>
+                <span class="testemunho-cargo">Cliente Satisfeita</span>
+            </div>
+            <!-- Novos Depoimentos -->
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"A comida é deliciosa e o atendimento é excepcional. Recomendo a todos!"</p>
+                <h3 class="testemunho-autor">Davi</h3>
+                <span class="testemunho-cargo">Cliente Regular</span>
+            </div>
+            <div class="testemunho-item">
+                <p class="testemunho-texto">"Um dos melhores restaurantes que já visitei. Ambiente sofisticado e pratos incríveis."</p>
+                <h3 class="testemunho-autor">Eduardo</h3>
+                <span class="testemunho-cargo">Gastronômico Entusiasta</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seção de Avaliação -->
+<section class="avaliacao" id="avaliacao">
+    <div class="container text-center">
+        <h2>Avalie o Restaurante</h2>
+        <div class="avaliacao__container">
+            <div class="avaliacao__stars" id="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p class="avaliacao__texto" id="rating-text">Clique nas estrelas para avaliar</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Seção Contato -->
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form action="mailto:seu-email@exemplo.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <!-- Rodapé -->
+<footer>
+    <div class="footer__container">
+        <div class="footer__about">
+            <img><a href="https://ibb.co/HqDgy0S"><img src="https://i.ibb.co/HqDgy0S/Logo-restaurante-delivery-rustico-1.png" alt="Logo-restaurante-delivery-rustico-1" border="0"></a>
+            <h2>Restaurante Cantinho DNL</h2>
+            <p>O melhor da culinária internacional em um ambiente elegante e acolhedor.</p>
+        </div>
+        <div class="footer__links">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer__social">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-line"></i></a>
+                  <a href="#" class="social-icon"><i class="ri-youtube-line"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__bottom">
+        <p>&copy; 2024 Restaurante Cantinhp DNL. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script>
+    // Script para o menu hambúrguer
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+
+            // Alternar o ícone do menu hambúrguer
+            const icon = menuToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('ri-menu-line');
+                icon.classList.add('ri-close-line');
+            } else {
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-line');
+            }
+        });
+
+        const navLinks = mainNav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('ri-close-line');
+                    icon.classList.add('ri-menu-line');
+                }
+            });
+        });
+    });
+</script>
+<script >
+    document.addEventListener('DOMContentLoaded', function() {
+    const stars = document.querySelectorAll('.avaliacao__stars .star');
+    const ratingText = document.getElementById('rating-text');
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', function() {
+            const value = this.getAttribute('data-value');
+            updateStars(value);
+        });
+
+        star.addEventListener('mouseout', function() {
+            updateStars(getCurrentRating());
+        });
+
+        star.addEventListener('click', function() {
+            const value = this.getAttribute('data-value');
+            setCurrentRating(value);
+            updateStars(value);
+            ratingText.textContent = `Você avaliou com ${value} ${value > 1 ? 'estrelas' : 'estrela'}`;
+        });
+    });
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            star.classList.toggle('active', star.getAttribute('data-value') <= rating);
+        });
+    }
+
+    function setCurrentRating(rating) {
+        localStorage.setItem('rating', rating);
+    }
+
+    function getCurrentRating() {
+        return localStorage.getItem('rating') || 0;
+    }
+
+    updateStars(getCurrentRating());
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll(".menu__tab");
+    const contents = document.querySelectorAll(".menu__content");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function() {
+            // Remove a classe 'active' de todas as abas e conteúdos
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.style.display = "none");
+
+            this.classList.add("active");
+            document.getElementById(this.getAttribute("data-tab")).style.display = "flex";
+        });
+    });
+
+    tabs[0].click();
+});
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJ+Yd5JT5I6od/ssFQJCQbaY2+9E4mVJrXqv0=" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="scripts.js"></script>
+</body>
+</html>
